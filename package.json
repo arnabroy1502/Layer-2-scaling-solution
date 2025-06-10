@@ -1,0 +1,33 @@
+{
+  "name": "layer2-scaling-solution",
+  "version": "1.0.0",
+  "description": "A Layer 2 scaling solution implementing state channels for off-chain transactions on Core Testnet 2",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js --network coreTestnet2",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "node": "npx hardhat node",
+    "clean": "npx hardhat clean"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "solidity",
+    "layer2",
+    "scaling",
+    "state-channels",
+    "core-blockchain"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
