@@ -11,7 +11,7 @@ import "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol";
  * @notice This contract enables users to open payment channels, conduct off-chain transactions, and settle on-chain
  
 contract Layer2ScalingSolution is ReentrancyGuard {
-    using ECDSA for bytes32;
+    using ECDSA for
     using MessageHashUtils for bytes32;
 
     struct Channel {
